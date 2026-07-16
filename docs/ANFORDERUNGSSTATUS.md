@@ -10,13 +10,13 @@ Legende: **Demo** = sichtbar/interaktiv mit fiktiven Daten; **Teilweise** = Konz
 |---|---|---|
 | Moderne deutsche Oberfläche, responsive für Mac/iPhone/Windows | Demo | Kernansichten sind vorhanden; vollständige Geräte- und Barrierefreiheitstests stehen aus. |
 | Vier Firmenansichten mit eigenem Branding | Demo | Personal Paramedic, BWW, Euroblood und Ruben Wippermann sind sichtbar. |
-| Strikte Mandantentrennung | Teilweise | Im Browser simuliert; muss serverseitig bei jeder Abfrage erzwungen werden. |
-| PP/BWW teilen Dozenten, sonst getrennt | Teilweise | Fachkonzept vorhanden; produktives Datenmodell fehlt. |
-| Rollen und Freigaben | Teilweise | Rollenansichten vorhanden; serverseitige RBAC/ABAC-Prüfung fehlt. |
+| Strikte Mandantentrennung | Teilweise | Serverseitiges Mandanten-Datenmodell und zentrale Autorisierungsprüfung vorbereitet; produktive Auth-Anbindung und Sicherheitstests fehlen. |
+| PP/BWW teilen Dozenten, sonst getrennt | Teilweise | Gemeinsames Dozentenprofil mit getrennten Firmenzuordnungen modelliert; produktive Workflows und Tests fehlen. |
+| Rollen und Freigaben | Teilweise | Serverseitige Rollen- und Rechtematrix sowie Autorisierungshelfer vorbereitet; Sitzungs- und Laufzeitanbindung fehlt. |
 | Login, Einladungen, Erstanmeldung, Onboarding | Offen | Benötigt Auth-Backend, sichere Sitzungen und Einladungsablauf. |
 | 2FA/MFA inklusive SMS | Offen/Extern | Benötigt Auth- und SMS-Anbieter; SMS nicht als alleiniger Faktor. |
-| Audit, ISO-9001-Nachvollziehbarkeit, Versionen | Teilweise | Oberfläche vorhanden; unveränderliches Serverprotokoll fehlt. |
-| Eigene Cloud/Dokumentenablage | Demo | Oberfläche vorhanden; verschlüsselter Objektspeicher und Berechtigungen fehlen. |
+| Audit, ISO-9001-Nachvollziehbarkeit, Versionen | Teilweise | Audit-Datenmodell vorbereitet; technische Unveränderbarkeit, Aufbewahrung und produktive Protokollierung fehlen. |
+| Eigene Cloud/Dokumentenablage | Teilweise | R2-Anbindung und Dokument-Metadaten vorbereitet; Bereitstellung, Verschlüsselung und Zugriffstests fehlen. |
 | Datenschutz, Löschung, Backup, Notfallkonzept | Offen | Vor Echtdaten Pflicht. |
 
 ## Personal Paramedic und BWW – Bildung
