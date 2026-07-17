@@ -4,11 +4,13 @@ import {
   DEFAULT_IMAGE_SIZES,
 } from "vinext/server/image-optimization";
 import handler from "vinext/server/app-router-entry";
+import { handleAccessRequest } from "./access";
 
 interface Env {
   ASSETS: Fetcher;
   DB: D1Database;
   FILES: R2Bucket;
+  BOOTSTRAP_ADMIN_EMAIL_SHA256?: string;
   IMAGES: {
     input(stream: ReadableStream): {
       transform(options: Record<string, unknown>): {
@@ -33,6 +35,9 @@ const worker = {
     ctx: ExecutionContext,
   ): Promise<Response> {
     const url = new URL(request.url);
+
+    const accessResponse = await handleAccessRequest(request, env);
+    if (accessResponse) return accessResponse;
 
     if (url.pathname === "/_vinext/image") {
       const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES];

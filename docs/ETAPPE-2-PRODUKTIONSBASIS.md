@@ -21,8 +21,9 @@ Stand: 16. Juli 2026
 
 ## Noch nicht produktiv aktiv
 
-- echter Login, Einladungsmails und Sitzungsverwaltung
-- Passkey/TOTP als primäre MFA sowie SMS als Zusatz- oder Wiederherstellungsweg
+- Aktivierung der neuen Zugangsseiten in der produktiven Hosting-Umgebung
+- automatischer Versand der Einladungsmails
+- SMS als zusätzlicher Wiederherstellungsweg; MFA selbst wird durch die Hosting-Plattform abgesichert
 - provisionierte Produktionsdatenbank und Dokumentablage
 - Negativtests für firmenfremde Zugriffe
 - Backup-, Lösch- und Wiederherstellungsabläufe
@@ -32,8 +33,8 @@ Solange diese Punkte offen sind, bleibt die öffentliche Seite eine Demo mit fik
 
 ## Nächste Etappe
 
-1. Identitätsanbieter auswählen und Produktionszugänge einrichten.
-2. Login, Einladung, MFA und Abmeldung serverseitig anbinden.
-3. D1 und R2 provisionieren, Migration ausführen und Rollen testen.
-4. Pilotnutzer Ruben Wippermann anlegen und Zugriff je Firma einzeln abnehmen.
+1. Produktionsspeicher provisionieren und beide Migrationen ausführen.
+2. Pilotnutzer Ruben Wippermann über die einmalige Admin-Ersteinrichtung anlegen.
+3. Firmenzugriffe und Einladungen mit Positiv- und Negativtests abnehmen.
+4. Einladungsmail und geführte Erstanmeldung ergänzen.
 5. Erst danach bereinigten Datenimport starten.

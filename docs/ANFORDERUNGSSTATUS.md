@@ -1,6 +1,6 @@
 # Anforderungsstatus
 
-Stand: 13. Juli 2026
+Stand: 16. Juli 2026
 
 Legende: **Demo** = sichtbar/interaktiv mit fiktiven Daten; **Teilweise** = Konzept oder Oberfläche vorhanden, aber ohne produktive Serverlogik; **Offen** = für den Echtbetrieb noch umzusetzen; **Extern** = Zugang/Vertrag/Freigabe eines Anbieters erforderlich.
 
@@ -10,11 +10,11 @@ Legende: **Demo** = sichtbar/interaktiv mit fiktiven Daten; **Teilweise** = Konz
 |---|---|---|
 | Moderne deutsche Oberfläche, responsive für Mac/iPhone/Windows | Demo | Kernansichten sind vorhanden; vollständige Geräte- und Barrierefreiheitstests stehen aus. |
 | Vier Firmenansichten mit eigenem Branding | Demo | Personal Paramedic, BWW, Euroblood und Ruben Wippermann sind sichtbar. |
-| Strikte Mandantentrennung | Teilweise | Serverseitiges Mandanten-Datenmodell und zentrale Autorisierungsprüfung vorbereitet; produktive Auth-Anbindung und Sicherheitstests fehlen. |
+| Strikte Mandantentrennung | Teilweise | Serverseitige Firmenprüfung ist an Sitzungen und Einladungen angebunden; produktive Negativ- und Isolationstests fehlen noch. |
 | PP/BWW teilen Dozenten, sonst getrennt | Teilweise | Gemeinsames Dozentenprofil mit getrennten Firmenzuordnungen modelliert; produktive Workflows und Tests fehlen. |
-| Rollen und Freigaben | Teilweise | Serverseitige Rollen- und Rechtematrix sowie Autorisierungshelfer vorbereitet; Sitzungs- und Laufzeitanbindung fehlt. |
-| Login, Einladungen, Erstanmeldung, Onboarding | Offen | Benötigt Auth-Backend, sichere Sitzungen und Einladungsablauf. |
-| 2FA/MFA inklusive SMS | Offen/Extern | Benötigt Auth- und SMS-Anbieter; SMS nicht als alleiniger Faktor. |
+| Rollen und Freigaben | Teilweise | Rollenmatrix, Sitzungsprüfung und firmenbezogene Einladungen sind angebunden; fachliche Detailrechte werden in den nächsten Modulen ergänzt. |
+| Login, Einladungen, Erstanmeldung, Onboarding | Teilweise | Plattform-Login, sichere Sitzung, einmalige Admin-Ersteinrichtung und Einmal-Einladungen sind umgesetzt; produktive Aktivierung, Mailversand und geführtes Onboarding fehlen noch. |
+| 2FA/MFA inklusive SMS | Teilweise/Extern | MFA wird sicher durch die Hosting-Plattform bereitgestellt; SMS wird später nur ergänzend als Wiederherstellungsweg angebunden. |
 | Audit, ISO-9001-Nachvollziehbarkeit, Versionen | Teilweise | Audit-Datenmodell vorbereitet; technische Unveränderbarkeit, Aufbewahrung und produktive Protokollierung fehlen. |
 | Eigene Cloud/Dokumentenablage | Teilweise | R2-Anbindung und Dokument-Metadaten vorbereitet; Bereitstellung, Verschlüsselung und Zugriffstests fehlen. |
 | Datenschutz, Löschung, Backup, Notfallkonzept | Offen | Vor Echtdaten Pflicht. |
